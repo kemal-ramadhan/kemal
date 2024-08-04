@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+
+:root{
+    --primaryColor : #000000;
+    --textPrimary : #000000;
+    --backgroundPrimary : #FFFFFF;
+}
+
+body {
+    font-size: 0.8rem;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.mobile {
+    display: block;
+}
+
+/* tombol */
+.menu-mobile {
+    position: fixed;
+    right: 5vw;
+    bottom: 10vh;
+    padding: 15px;
+    background-color: var(--backgroundPrimary);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 0.3px solid var(--primaryColor); */
+    box-shadow: 0px 3px 6px #E4E4E4;
+    z-index: 100;
+}
+
+.menu-mobile-item {
+    width: 30px;
+    align-items: center;
+}
+
+.menu-active {
+    display: flex;
+}
+
+.menu-non-active {
+    display: none;
+}
+
+.nav-bar, .nav-space {
+    width: 100%;
+    font-family: 'Poppins', sans-serif !important;
+    display: flex;
+    flex-wrap: nowrap;
+    z-index: 100;
+}
+
+.nav-space {
+    margin: 0px auto;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.nav-bar-logo {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-item-logo {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-menu {
+    transition: all 0.3s ease; /* Contoh transisi untuk perubahan gaya */
+    flex-wrap: wrap; /* Membuat item baru pindah ke baris baru */
+    gap: 10px; /* Jarak antara item */
+    position: fixed;
+    right: 25vw;
+    bottom: 10vh;
+    padding: 20px;
+    width: 100px;
+    border-radius: 20px;
+    align-items: center;
+    line-height: 30px;
+    background-color: var(--backgroundPrimary);
+    box-shadow: 0px 3px 6px #E4E4E4;
+    font-family: 'Poppins', sans-serif !important;
+    color: var(--textPrimary);
+    font-weight: bold;
+}
+
+.nav-menu-item-me {
+    width: 100%;
+    text-align: center;
+    padding: 3px 20px 3px 20px;
+}
+
+
+.nav-menu-item-me:hover {
+    background-color: transparent;
+    padding: 3px 20px 3px 20px;
+    border: 1px solid var(--primaryColor);
+    box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 1); /* Offset x dan y 10px, tanpa blur, tanpa spread, warna hitam solid */
+    transition: box-shadow 0.8s ease-in-out; /* Transisi pada properti box-shadow selama 0.3 detik dengan easing */
+    box-sizing: border-box;
+}
+
+.link-none {
+    text-decoration: none;
+    color: var(--textPrimary);
+}
+
+.jumbo {
+    width: auto;
+}
+
+.contain {
+    width: 320px;
+    margin: 10px auto;
+}
+
+.top-space-xxxxl {
+    margin-top: 20vh;
+}
+
+.top-space-xxxl {
+    margin-top: 10vh;
+}
+
+.top-space-xxl {
+    margin-top: 15vh;
+}
+
+.top-space-xl {
+    margin-top: 10vh;
+}
+.top-space {
+    margin-top: 5vh;
+}
+
+.head-tagline {
+    line-height: 15px;
+    font-size: 1.2rem;
+}
+
+.head-tagline p {
+    font-size: 0.9rem;
+}
+
+.media-info img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.media-skills img {
+    width: 70px;
+    margin-right: 7vw;
+}
+
+.box-shadow-profile {
+    width: 250px;
+    border: 1px solid var(--primaryColor);
+    box-shadow: 35px 35px 0px 0px rgba(0, 0, 0, 1); /* Offset x dan y 10px, tanpa blur, tanpa spread, warna hitam solid */
+}
+
+/* .section-img {
+    order: 1 !important;
+} */
+
+.section-img img {
+    width: 100%;
+}
+
+.head-sub {
+    background-color: transparent;
+    padding: 3px 20px 3px 20px;
+    border: 1px solid var(--primaryColor);
+    box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 1); /* Offset x dan y 10px, tanpa blur, tanpa spread, warna hitam solid */
+    transition: box-shadow 0.8s ease-in-out; /* Transisi pada properti box-shadow selama 0.3 detik dengan easing */
+    box-sizing: border-box;
+}
+
+.sectio-deskripsi {
+    line-height: 25px;
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.box-kontak {
+    max-width: 300px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.box-image {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    background-color: #E4E4E4;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 3vw;
+    margin-bottom: 3vh;
+}
+
+.content-center-line {
+    margin: 0px auto;
+    width: 300px;
+}
+
+.foot {
+    background-color: #171717;
+    color: #FFFFFF;
+    padding: 25px;
+    margin-top: 5vh;
+    margin-bottom: -10px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.contain-foot {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.box.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.box.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* media lebih dari ukuran 789px / ukuran tab ke atas */
+@media only screen and (min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+
+    /* .section-img {
+        order: -1 !important;
+    } */
+    
+    .top-space-xxxl {
+        margin-top: 15vh;
+    }
+
+    .top-space-xxxxl {
+        margin-top: 20vh;
+    }
+
+    .nav-space {
+        width: 680px;
+        margin: 0px auto;
+    }
+
+    .nav-bar {
+        background-color: var(--backgroundPrimary);
+        position: fixed;
+        top: 0px;
+        padding: 10px;
+        box-sizing: border-box;
+        z-index: 100;
+    }
+
+    .nav-bar-logo {
+        margin-top: 25px;
+        text-align: left;
+    }
+
+    .nav-menu {
+        padding: 20px;
+        display: flex;  
+        flex-wrap: nowrap;
+        position: absolute;
+        bottom: auto;
+        right: 320px;
+        gap: 10px;
+        box-shadow: 0px 0px 0px rgb(215, 210, 210);
+        font-family: 'Poppins', sans-serif !important;
+        color: var(--textPrimary);
+        font-weight: bold;
+        align-content: end;
+    }
+
+    .nav-menu-item-me {
+        width: 100%;
+        text-align: center;
+        padding: 3px 20px 3px 20px;
+    }
+
+    .active {
+        background-color: transparent;
+        padding: 3px 20px 3px 20px;
+        border: 1px solid var(--primaryColor);
+        box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 1); /* Offset x dan y 10px, tanpa blur, tanpa spread, warna hitam solid */
+        transition: box-shadow 0.8s ease-in-out; /* Transisi pada properti box-shadow selama 0.3 detik dengan easing */
+        box-sizing: border-box;
+    }
+
+    .contain {
+        width: 650px;
+    }
+
+    .head-tagline {
+        max-width: 350px;
+    }
+
+    .line-content {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .box-shadow-profile {
+        width: 220px;
+        margin-left: 5vw;
+    }
+    
+    /* .section-img {
+        order: unset;
+    } */
+    .section-img img {
+        max-width: 300px;
+    }
+
+    .sectio-deskripsi {
+        line-height: 25px;
+        max-width: 300px;
+    }
+
+    .section-deskripsi-project {
+        width: 300px;
+    }
+
+    .ml {
+        margin-left: 5vw;
+    }
+    
+    .mr {
+        margin-right: 5vw;
+    }
+
+    .center-content {
+        min-width: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content-center-line {
+        width: 700px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+
+}
+
+/* media ukuran tab 1024 keatas  */
+@media only screen and (min-width: 1024px) {
+    .nav-space {
+        width: 1024px;
+    }
+
+    .top-space-xxxxl {
+        margin-top: 35vh;
+    }
+    
+    .top-space-xxxl {
+        margin-top: 25vh;
+    }
+
+    .top-project {
+        margin-top: 5vw;
+    }
+
+    .nav-menu {
+        right: 33vw;
+    }
+
+    .contain {
+        width: 1024px;
+    }
+
+    .head-tagline {
+        max-width: 500px;
+        line-height: 15px;
+        font-size: 1.5rem;
+        margin-top: 15vh;
+    }
+    
+    .box-shadow-profile {
+        width: 220px;
+        margin-left: 26vw;
+    }
+
+    .section-img img {
+        max-width: 500px;
+    }
+
+    .sectio-deskripsi {
+        line-height: 30px;
+        width: 500px;
+        margin-left: 5vw;
+    }
+
+    .section-deskripsi-project {
+        width: 450px;
+    }
+
+    .ml {
+        margin-left: 5vw;
+    }
+    
+    .mr {
+        margin-right: 5vw;
+    }
+
+    .center-content {
+        width: 1024px;
+        margin: 0px auto;
+    }
+
+    .content-center-line {
+        width: 1024px;
+    }
+    
+    .box-image {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        background-color: #E4E4E4;
+        padding: 10px;
+        border-radius: 10px;
+        margin-right: 2vw;
+        margin-bottom: 3vh;
+    }
+    
+}
